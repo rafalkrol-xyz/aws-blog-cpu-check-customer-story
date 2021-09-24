@@ -1,0 +1,5 @@
+{
+  "LambdaStackUrlHealthCheck-eu-west-1/LambdaFunctionUrlHealthCheck": {
+    "URL": "http://example.com"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "ssh_check",
+  "version": "1.0.0",
+  "description": "A function that checks whether a given host is listening for SSH connections",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --timeout 10000 tests/unit/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.7.4",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "sinon": "^9.2.3",
+    "testdouble": "^3.16.1",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ec2": "^3.4.1",
+    "@types/ssh2": "^0.5.47",
+    "ssh2": "^0.8.9"
+  }
+}

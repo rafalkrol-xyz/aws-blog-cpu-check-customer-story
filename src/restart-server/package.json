@@ -1,0 +1,21 @@
+{
+  "name": "server_restart",
+  "version": "1.0.0",
+  "description": "A function that restarts a given EC2 instance",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --timeout 10000 tests/unit/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-ec2": "^3.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.7.4",
+    "chai": "^4.3.0",
+    "mocha": "^8.2.1",
+    "sinon": "^9.2.4",
+    "typescript": "^4.4.2"
+  }
+}

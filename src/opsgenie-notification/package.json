@@ -1,0 +1,21 @@
+{
+  "name": "opsgenie_notification",
+  "version": "1.0.0",
+  "description": "A function that creates an alarm in OpsGenie",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha tests/unit/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.7.4",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "moxios": "^0.4.0",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}

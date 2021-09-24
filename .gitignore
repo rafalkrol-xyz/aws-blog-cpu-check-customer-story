@@ -1,0 +1,11 @@
+*.js
+!jest.config.js
+!testHandler.js
+*.d.ts
+node_modules
+.env
+.aws-sam
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out

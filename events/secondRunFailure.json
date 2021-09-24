@@ -1,0 +1,7 @@
+{
+  "InstanceId": "i-0c1cbf2e7abdedf75",
+  "checkPassed": false,
+  "secondRun": true,
+  "failedInFirstRun": "sshCheck",
+  "failedInSecondRun": "urlHealthCheck"
+}
