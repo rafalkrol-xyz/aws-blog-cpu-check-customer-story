@@ -81,25 +81,19 @@ npm install
 cdk bootstrap
 ```
 
-**d)** [compile TypeScript](https://docs.aws.amazon.com/cdk/latest/guide/hello_world.html#hello_world_tutorial_build)
-
-```bash
-npm run build # or `npm run watch` in a separate terminal window/tab to for constant TypeScript compilation in the background
-```
-
-**e)** build Lambda packages
+**d)** build Lambda packages
 
 ```bash
 sam-beta-cdk build
 ```
 
-**f)** deploy the application to all regions
+**e)** deploy the application to all regions
 
 ```bash
 cdk deploy --app .aws-sam/build --all --require-approval never
 ```
 
-**g)** (OPTIONAL) run a subsequent `cdk deploy` to update the paths in metadata
+**f)** (OPTIONAL) run a subsequent `cdk deploy` to update the paths in metadata
 
 ```bash
 cdk deploy --all --require-approval never
