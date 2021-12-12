@@ -21,8 +21,8 @@ The CPU Check is a simple serverless application that serves as a first-line of 
   * the recommended way is to install it with [NVM](https://github.com/nvm-sh/nvm), e.g.:
 
   ```bash
-  nvm install v16.1.0
-  nvm use v16.1.0
+  nvm install v16.13.1
+  nvm use v16.13.1
   ```
 
 * [CDK](https://docs.aws.amazon.com/cdk/latest/guide/home.html)
@@ -172,19 +172,13 @@ All current [env vars used by the Lambda functions](https://docs.aws.amazon.com/
 All of the Lambda functions can be invoked locally, inside a docker container, using [AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-cdk-testing.html).
 **NB** please be aware that the actual logic is executed in a given AWS account.
 
-**a)** [compile TypeScript](https://docs.aws.amazon.com/cdk/latest/guide/hello_world.html#hello_world_tutorial_build)
-
-```bash
-npm run build # or `npm run watch` in a separate terminal window/tab to for constant TypeScript compilation in the background
-```
-
-**b)** build Lambda packages
+**a)** build Lambda packages
 
 ```bash
 sam-beta-cdk build
 ```
 
-**c)** invoke a given lambda
+**b)** invoke a given lambda
 
 ```bash
 sam-beta-cdk local invoke [OPTIONS] STACK_NAME/FUNCTION_IDENTIFIER
